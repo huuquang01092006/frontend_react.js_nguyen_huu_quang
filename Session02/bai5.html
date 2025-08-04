@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let phoneBooks = [];
+      function addContact() {
+        let name = prompt("Nhap ten: ");
+        let phone = prompt("Nhap so dien thoai: ");
+        let email = prompt("Nhap email: ");
+        phoneBooks.push({ name: name, phone: phone, email: email });
+      }
+      function displayContact() {
+        for (let i = 0; i < phoneBooks.length; i++) {
+          console.log(
+            `Ten: ${phoneBooks[i].name}, So dien thoai: ${phoneBooks[i].phone}, Email: ${phoneBooks[i].email}`
+          );
+        }
+      }
+      addContact();
+      addContact();
+      displayContact();
+    </script>
+  </body>
+</html>

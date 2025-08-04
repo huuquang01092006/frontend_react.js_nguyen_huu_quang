@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user = {
+        name: "Khanh",
+        age: 20,
+        location: {
+          city: "Ha Noi",
+          country: "Viet Nam",
+        },
+        contact: {
+          email: "khanh@gmail",
+          phone: "09876567657",
+        },
+        job: {
+          title: "Dev",
+          company: "FPT",
+        },
+      };
+      let displayUserInfo = ({ name, age, location, contact, job }) => {
+        const { city = "unknown", country = "unknown" } = location || {};
+
+        const { email = "unknown", phone = "unknown" } = contact || {};
+
+        const { title = "unknown", company = "unknown" } = job || {};
+
+        return `${name} is ${age} years old. He lives in ${city}, ${country}. He can be contacted at ${email} or ${phone}. He works as a ${title} at ${company}.`;
+      };
+
+      console.log(displayUserInfo(user));
+    </script>
+  </body>
+</html>
