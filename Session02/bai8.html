@@ -30,7 +30,7 @@
 
         const { title = "unknown", company = "unknown" } = job || {};
 
-        return `${name} is ${age} years old. He lives in ${city}, ${country}. He can be contacted at ${email} or ${phone}. He works as a ${title} at ${company}.`;
+        return `${name} is ${age} years old, lives in ${city}, ${country}, works as ${title} at ${company}, and can be contacted via ${email} or ${phone}`;
       };
 
       console.log(displayUserInfo(user));
