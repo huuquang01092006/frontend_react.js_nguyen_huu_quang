@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    // Mục tiêu biên dịch và thư viện hỗ trợ
+    "target": "es2015",
+    "lib": ["es2015", "dom"],
+
+    // Cấu hình module
+    "module": "nodenext",
+    "types": [],
+
+    // NodeJS
+    // "types": ["node"],
+    // "lib": ["esnext"], // đã thay bằng es2015
+
+    // Các thiết lập khác
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  }
+}
