@@ -2,7 +2,8 @@
 // import Calculator from "./baitap/Calculation";
 // import User from "./baitap/UserInfo";
 // import ColorBox from "./component/ColorBox";
-import FormatName from "./component/FormatName";
+// import FormatName from "./component/FormatName";
+import AdminIndex from "./component/AdminIndex";
 function App() {
   return (
     <>
@@ -12,7 +13,8 @@ function App() {
         <User />
       </> */}
       {/* <ColorBox /> */}
-      <FormatName />
+      {/* <FormatName /> */}
+      <AdminIndex />
     </>
   );
 }
